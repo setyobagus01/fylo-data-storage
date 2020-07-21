@@ -17,7 +17,7 @@ body {
 
 .bg-img {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: -1;
   background-size: contain;
@@ -35,14 +35,14 @@ body {
 .fylo-container {
   background: hsl(228, 56%, 26%);
   width: 35%;
-  min-height: 25vh;
+  min-height: 22vh;
   border-radius: 10px 100px 10px 10px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 3rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 .drive {
@@ -64,9 +64,19 @@ body {
 }
 
 .storage-container {
-  background: hsl(228, 56%, 26%);
-  min-height: 20vh;
+  position: relative;
+  padding-top: 3rem;
   width: 60%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 13rem;
+}
+
+.storage-wrapper {
+  background: hsl(228, 56%, 26%);
+  height: 20vh;
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -75,14 +85,55 @@ body {
   justify-content: space-between;
   padding: 2rem 0;
   border-radius: 10px;
-  margin-bottom: 3rem;
+}
+
+.storage-left {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .storage-text {
-  width: 90%;
-  margin: 0 auto;
   color: hsl(210, 2%, 80%);
   font-size: 1rem;
+}
+
+.storage-message {
+  background: hsl(0, 16%, 96%);
+  color: hsl(229, 7%, 55%);
+  font-size: 14px;
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  width: 27%;
+  height: 8vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.storage-message::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid hsl(0, 16%, 96%);
+  border-top: 12px solid hsl(0, 16%, 96%);
+  border-bottom: 24px solid transparent;
+  right: 0;
+  bottom: -20px;
+}
+
+.storage-message strong {
+  font-size: 2.5rem;
+  color: black;
+  margin-left: 1rem;
+}
+.storage-message span {
+  font-size: 14px;
+  margin-right: 1rem;
+  font-weight: bold;
 }
 
 .storage-text strong {
