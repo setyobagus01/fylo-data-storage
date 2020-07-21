@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway";
+  background-image: url("../images/bg-desktop.png");
+  background-size: cover;
+}
+
+.container {
+  background: hsl(229, 57%, 11%);
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fylo-container {
+  background: hsl(228, 56%, 26%);
+  width: 30%;
+  min-height: 20vh;
+  border-radius: 10px 100px 10px 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 3rem;
+}
+
+.fylo-text {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.drive {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.drive > img {
+  background-color: hsl(229, 57%, 11%);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+}
+
+.storage-container {
+  background: hsl(228, 56%, 26%);
+  min-height: 18vh;
+  width: 65%;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  border-radius: 10px;
+  margin-top: 1.25rem;
+}
+
+.storage-text {
+  width: 90%;
+  margin: 0 auto;
+  color: hsl(229, 7%, 55%);
+}
+
+.storage-text strong {
+  color: rgb(223, 221, 221);
+}
+
+.line-container {
+  width: 90%;
+  background: hsl(229, 57%, 11%);
+  height: 20px;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.line {
+  display: flex;
+  text-align: right;
+  width: 80%;
+  height: 20px;
+  background: hsl(6, 100%, 80%);
+  border-radius: 50px;
+}
+
+.circle {
+  padding: 0.6rem;
+  border-radius: 50px;
+  background: rgb(230, 230, 230);
+  margin: 0 0 0 auto;
+}
+
+.storage {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.min-text,
+.max-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(204, 200, 200);
+}
