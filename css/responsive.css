@@ -1,0 +1,104 @@
+@media (min-width: 1000px) {
+  .bg-mobile {
+    display: none;
+  }
+
+  .bg-img {
+    display: block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    flex-direction: column;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fylo-container {
+    width: 60%;
+    height: 25vh;
+    margin-bottom: 1rem;
+  }
+
+  .drive {
+    width: 45%;
+  }
+
+  .storage-container {
+    width: 90%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .bg-img {
+    display: none;
+  }
+
+  .main-container {
+    align-items: stretch;
+  }
+
+  .fylo-container {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 30vh;
+  }
+
+  .drive {
+    width: 65%;
+  }
+
+  .drive-logo {
+    width: 45%;
+  }
+
+  .storage-container {
+    width: 100%;
+    margin-bottom: 0;
+    padding-top: 0;
+    min-height: 25vh;
+  }
+
+  .storage-wrapper {
+    height: 25vh;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .storage-message {
+    bottom: -2rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: unset;
+    width: 50%;
+    height: 11vh;
+    font-size: 12px;
+  }
+
+  .storage-left {
+    font-size: 14px;
+  }
+
+  .line-container {
+    width: 80%;
+  }
+
+  .storage-message::after {
+    border: none;
+  }
+
+  .storage {
+    width: 80%;
+  }
+
+  .min-text,
+  .max-text {
+    font-size: 0.8rem;
+    color: rgb(205, 213, 226);
+  }
+}

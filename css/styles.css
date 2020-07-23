@@ -16,11 +16,23 @@ body {
 }
 
 .bg-img {
+  display: block;
   width: 100%;
   position: fixed;
   bottom: 0;
   z-index: -1;
   background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.bg-mobile {
+  background-size: contain;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .main-container {
@@ -175,5 +187,7 @@ body {
 .max-text {
   font-weight: bold;
   font-size: 1.2rem;
-  color: rgb(204, 200, 200);
+  color: rgb(205, 213, 226);
 }
+
+/* Mobile */
